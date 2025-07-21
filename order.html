@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Place Order - UM.Store.pk</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">UM.Store.pk</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="watches.html">Watches</a>
+      <a href="master.html">Master Copies</a>
+      <a href="women.html">Women Watches</a>
+      <a href="order.html">Order</a>
+    </nav>
+  </header>
+
+  <section class="featured">
+    <h2>Place Your Order</h2>
+    <form action="request.php" method="POST" style="max-width: 400px; margin: auto; text-align: left;">
+      <label>Your Name:</label><br>
+      <input type="text" name="name" required style="width: 100%; padding: 8px;"><br><br>
+
+      <label>Phone Number:</label><br>
+      <input type="text" name="phone" required style="width: 100%; padding: 8px;"><br><br>
+
+      <label>Full Address:</label><br>
+      <textarea name="address" required style="width: 100%; padding: 8px;"></textarea><br><br>
+
+      <label>Watch Name:</label><br>
+      <input type="text" name="product" required style="width: 100%; padding: 8px;"><br><br>
+
+      <label>Payment Method:</label><br>
+      <select name="payment" style="width: 100%; padding: 8px;" required>
+        <option value="JazzCash">JazzCash</option>
+        <option value="EasyPaisa">EasyPaisa</option>
+        <option value="Bank Transfer">Bank Transfer</option>
+      </select><br><br>
+
+      <button type="submit" class="btn">Submit Order</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 UM.Store.pk</p>
+  </footer>
+
+</body>
+</html>
